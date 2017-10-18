@@ -1,5 +1,8 @@
 # All-in-One-Bash-Logger
-A one-touch bash logging solution to be simply pasted inside the script itself
+
+All you need to do is paste the following textblock under the shebang in your script! That's all!
+
+You'll find logfiles in /root/ [only works for root, change line 3 if running as a different user]
 
 ```bash
 # All in one logging | v0.3 | 20171018 173600 | 20171018 175600 | Nk
