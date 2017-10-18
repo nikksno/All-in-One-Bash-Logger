@@ -5,7 +5,7 @@ All you need to do is paste the following textblock under the shebang in your sc
 You'll find logfiles in /root/ [only works for root, change line 3 if running as a different user]
 
 ```bash
-# All in one Bash Logger | v0.4 | 20171018 173600 | 20171018 181100 | Nk
+# All in One Bash Logger | v0.4 | 20171018 173600 | 20171018 181100 | Nk
 
 logname=`basename "$0"`                     # The name of this script
 now="$(date +"%Y-%m-%d_%H-%M-%S")"          # The current timestamp
