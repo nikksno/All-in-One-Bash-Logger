@@ -1,7 +1,7 @@
 # All-in-One-Bash-Logger
 A one-touch bash logging solution to be simply pasted inside the script itself
 
-```
+```bash
 # All in one logging | v0.3 | 20171018 173600 | 20171018 175600 | Nk
 
 logname=`basename "$0"`                   # The name of this script
