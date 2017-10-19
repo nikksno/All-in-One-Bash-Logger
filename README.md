@@ -15,7 +15,7 @@ mkdir -p $logdir                     # Touch the dir
 touch $logfile                       # Touch the file
 rm $logdir/latest-log                # Remove the old latest-log symlink
 ln -s $logfile $logdir/latest-log    # Recreate the symlink
-ls -t $logdir | awk 'NR>43           # Delete all logs older than the newest 42
+ls -t $logdir | awk 'NR>43'          # Delete all logs older than the newest 42
 exec >  >(tee -ia $logfile)          # Log one output to logfile
 exec 2> >(tee -ia $logfile >&2)      # Log the other output to logfile
 ```
