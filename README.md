@@ -2,7 +2,7 @@
 
 All you need to do is paste the following textblock under the shebang in your script! That's all!
 
-You'll find logfiles in /root/ [only works for root, change line 3 if running as a different user]
+You'll find logfiles in **~/logs/**.
 
 ```bash
 # All in One Bash Logger | v0.49 | 20171018 | 20171128 | Nk
