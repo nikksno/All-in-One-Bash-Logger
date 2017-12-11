@@ -5,7 +5,7 @@ All you need to do is paste the following textblock under the shebang in your sc
 You'll find logfiles in **~/logs/**.
 
 ```bash
-# All in One Bash Logger | v0.49 | 20171018 | 20171128 | Nk
+# All in One Bash Logger | v0.50 | 20171018 | 20171211 | Nk
 
 scriptname=`basename "$0"`                                            # The name of this script
 now="$(date +"%Y-%m-%d_%H-%M-%S")"                                    # The current timestamp
@@ -20,5 +20,6 @@ ln -s $logfile $logdir/latest-log                                     # Recreate
 exec >  >(tee -ia $logfile)                                           # Log stdout to logfile
 if [ $interactive = "n" ]; then exec 2> >(tee -ia $logfile >&2); fi   # Log stderr to logfile if non-interactive
 echo && echo "Starting $scriptname script on $now..." && echo         # Write heading to logfile
+chmod -R 700 $logdir                                                  # Secure logs directory
 
 ```
