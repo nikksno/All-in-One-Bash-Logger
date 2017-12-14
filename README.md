@@ -5,9 +5,9 @@ All you need to do is paste the following textblock under the shebang in your sc
 You'll find logfiles in **~/logs/**.
 
 ```bash
-# All in One Bash Logger | v0.50 | 20171018 | 20171211 | Nk
+# All in One Bash Logger | v0.51 | 20171018 | 20171214 | Nk
 
-scriptname=`basename "$0"`                                            # The name of this script
+scriptname=$(basename "$0")                                            # The name of this script
 now="$(date +"%Y-%m-%d_%H-%M-%S")"                                    # The current timestamp
 logdir="$HOME/logs/$scriptname"                                       # Don't store anything else than logs in here!
 logfile="$logdir/$now"                                                # The new logfile
